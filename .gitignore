@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.vercel/
+.wrangler/
+.open-next/
+out/
+dev.db
+dev.db-journal
+*.log
+.env
+.env.local
+.dev.vars
+.DS_Store
+next-env.d.ts
+tsconfig.tsbuildinfo

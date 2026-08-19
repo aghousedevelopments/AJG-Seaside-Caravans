@@ -1,0 +1,41 @@
+{
+  "name": "ajg-seaside-caravans",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".open-next/assets"
+  },
+
+  // Created with: wrangler d1 create ajg-seaside-caravans
+  // Then paste the returned database_id below.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ajg-seaside-caravans",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  // Created with: wrangler r2 bucket create ajg-seaside-caravans-gallery
+  "r2_buckets": [
+    {
+      "binding": "GALLERY_BUCKET",
+      "bucket_name": "ajg-seaside-caravans-gallery"
+    }
+  ],
+
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "http://localhost:3000"
+  }
+
+  // Secrets (never put these here) — set with:
+  //   wrangler secret put STRIPE_SECRET_KEY
+  //   wrangler secret put STRIPE_WEBHOOK_SECRET
+  //   wrangler secret put ADMIN_PASSWORD
+  //   wrangler secret put SENDGRID_API_KEY   (optional)
+  //   wrangler secret put SENDGRID_FROM      (optional)
+}

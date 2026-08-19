@@ -1,0 +1,9 @@
+# Local dev secrets, read by Miniflare (via next dev / wrangler dev / preview).
+# Copy to `.dev.vars` (gitignored) and fill in. In production these are set
+# with `wrangler secret put <NAME>` instead — see README.md.
+
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+ADMIN_PASSWORD=change-me
+SENDGRID_API_KEY=
+SENDGRID_FROM=
